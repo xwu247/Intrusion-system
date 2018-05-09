@@ -1,0 +1,272 @@
+{
+    "ietf-mud:mud": {
+        "mud-url": "", 
+        "cache-validity": 48, 
+        "is-supported": true, 
+        "systeminfo": "This is used in Dynamic Profiling", 
+        "last-update": "2018-04-09 16:24:00.523398", 
+        "from-device-policy": {
+            "access-lists": {
+                "access-list": [
+                    {
+                        "acl-name": "ACL-36750-v4fr", 
+                        "acl-type": ""
+                    }
+                ]
+            }
+        }, 
+        "to-device-policy": {
+            "access-lists": {
+                "access-list": [
+                    {
+                        "acl-name": "ACL-36750-v4to", 
+                        "acl-type": ""
+                    }
+                ]
+            }
+        }, 
+        "Manufacturer": "123"
+    }, 
+    "ietf-access-control-list:access-lists": {
+        "acl": [
+            {
+                "aces": [
+                    {
+                        "name": "lociot-todev", 
+                        "match": {
+                            "icmp": {}, 
+                            "ietf-mud:mud": {
+                                "local-network": [
+                                    "null"
+                                ]
+                            }, 
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 1
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "dev.ezviz7.com."
+                            }, 
+                            "tcp": {
+                                "dport": 35351, 
+                                "sport": 8555
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "dev.us.ezviz7.com."
+                            }, 
+                            "tcp": {
+                                "dport": 35351, 
+                                "sport": 8555
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "udp": {
+                                "dport": 49496, 
+                                "sport": 123
+                            }, 
+                            "ipv4": {
+                                "protocol": 17, 
+                                "host_name": "0.amazon.pool.ntp.org."
+                            }, 
+                            "actions": {
+                                "forwarding": "accept"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "dev.ezviz7.com."
+                            }, 
+                            "tcp": {
+                                "dport": 58961, 
+                                "sport": 8555
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "dev.us.ezviz7.com."
+                            }, 
+                            "tcp": {
+                                "dport": 58961, 
+                                "sport": 8555
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "pmsus1.ezvizlife.com."
+                            }, 
+                            "tcp": {
+                                "dport": 47948, 
+                                "sport": 8080
+                            }
+                        }
+                    }
+                ], 
+                "type": "ipv4-acl-type", 
+                "name": "mud-36750-v4to"
+            }, 
+            {
+                "aces": [
+                    {
+                        "name": "lociot-frdev", 
+                        "match": {
+                            "icmp": {}, 
+                            "ietf-mud:mud": {
+                                "local-network": [
+                                    "null"
+                                ]
+                            }, 
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 1
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "dev.ezviz7.com."
+                            }, 
+                            "tcp": {
+                                "dport": 8555, 
+                                "sport": 35351
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "dev.us.ezviz7.com."
+                            }, 
+                            "tcp": {
+                                "dport": 8555, 
+                                "sport": 35351
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "udp": {
+                                "dport": 123, 
+                                "sport": 49496
+                            }, 
+                            "ipv4": {
+                                "protocol": 17, 
+                                "host_name": "0.amazon.pool.ntp.org."
+                            }, 
+                            "actions": {
+                                "forwarding": "accept"
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "dev.ezviz7.com."
+                            }, 
+                            "tcp": {
+                                "dport": 8555, 
+                                "sport": 58961
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "dev.us.ezviz7.com."
+                            }, 
+                            "tcp": {
+                                "dport": 8555, 
+                                "sport": 58961
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "pmsus1.ezvizlife.com."
+                            }, 
+                            "tcp": {
+                                "dport": 8080, 
+                                "sport": 47948
+                            }
+                        }
+                    }
+                ], 
+                "type": "ipv4-acl-type", 
+                "name": "mud-36750-v4fr"
+            }
+        ]
+    }
+}

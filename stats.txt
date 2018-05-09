@@ -1,0 +1,14 @@
+﻿{ "_id" : ObjectId("5ae12e7faebdd8157c9763b5"), 
+"static_profile" : [ ], 
+"endpts" : [ { "ip" : "203.205.151.204", "fr" : [ { "dport" : 80, "sport" : 52522, "protocol" : 6 }, { "dport" : 80, "sport" : 52525, "protocol" : 6 }, { "dport" : 80, "sport" : 52527, "protocol" : 6 }], 
+"service_stats" : [ { "payload" : 800, "service" : "OTHER" }, { "payload" : 216745, "service" : "HTTP" }, { "payload" : 1779, "service" : "DNS" }, { "payload" : 14337, "service" : "SSL" } ], 
+"in_ex_stats" : { "ex" : 240302, "in" : 2179 }, 
+"protocol_stats" : [ { "protocol" : "UDP", "payload" : 3121 }, { "protocol" : "TCP", "payload" : 239360 } ], 
+"os" : "Apple OS", 
+"IoT" : true, 
+"device_type" : "", 
+"mac_address" : "d8:1d:72:c7:c0:79", 
+"domains" : [ { "ips" : [ "captive-cidr.origin-apple.com.akadns.net.", "captive-cdn.origin-apple.com.akadns.net.", "captive.g.aaplimg.com.", "17.253.97.204", "17.253.97.201" ], "domain" : "captive.apple.com." },], 
+"manufacturer" : "Apple", 
+"ip_address" : "192.168.1.225" }
+

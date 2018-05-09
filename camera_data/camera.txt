@@ -1,0 +1,64 @@
+{
+	"id" : ObjectId("5ac6a428aebdd87327d35b50"), 
+	"static_profile" : [ ], 
+	"endpts" : [ 
+			{ "ip" : "224.0.0.251", "fr" : [ 
+												{ "dport" : 5353, "sport" : 5353, "protocol" : 17 } 
+											], 
+									"to" : [ ] 
+			}, 
+			{ "ip" : "52.44.92.194", "fr" : [ 
+												{ "dport" : 8555, "sport" : 35746, "protocol" : 6 }, 
+												{ "dport" : 8555, "sport" : 35749, "protocol" : 6 } 
+											], 
+									"to" : [ 
+												{ "dport" : 35746, "sport" : 8555, "protocol" : 6 }, 
+												{ "dport" : 35749, "sport" : 8555, "protocol" : 6 } 
+											] 
+			}, 
+			{ "ip" : "239.255.255.250", "fr" : [ 
+												{ "dport" : 1900, "sport" : 51772, "protocol" : 17 } 
+											], 
+										"to" : [ ] 
+			}, 
+			{ "ip" : "52.22.50.150", "fr" : [ 
+												{ "dport" : 6800, "sport" : 52568, "protocol" : 6 }, 
+												{ "dport" : 6900, "sport" : 42023, "protocol" : 6 }, 
+												{ "dport" : 6800, "sport" : 52571, "protocol" : 6 }, 
+												{ "dport" : 6900, "sport" : 42026, "protocol" : 6 } ], 
+									"to" : [ 
+												{ "dport" : 52568, "sport" : 6800, "protocol" : 6 }, 
+												{ "dport" : 42023, "sport" : 6900, "protocol" : 6 }, 
+												{ "dport" : 52571, "sport" : 6800, "protocol" : 6 }, 
+												{ "dport" : 42026, "sport" : 6900, "protocol" : 6 } 
+											] 
+			}, 
+			{ "ip" : "138.236.128.36", "fr" : [ 
+												{ "dport" : 123, "sport" : 36592, "protocol" : 17 } 
+											], 
+										"to" : [ 
+												{ "dport" : 36592, "sport" : 123, "protocol" : 17 } 
+											] 
+			}, 
+			{ "ip" : "192.168.1.1", "fr" : [ 
+												{ "dport" : -1, "sport" : -1, "protocol" : 1 } 
+											], 
+									"to" : [ 
+												{ "dport" : -1, "sport" : -1, "protocol" : 1 } 
+											] 
+			} 
+	], 
+	"IoT" : true, 
+	"device_type" : "", 
+	"mac_address" : "cc:b8:a8:34:3d:2c", 
+	"domains" : [ 
+		{ "ips" : [ "tdev.ezviz7.com.", "lbs-726140220.us-east-1.elb.amazonaws.com.", "54.164.184.247", "52.44.92.194" ], "domain" : "dev.ezviz7.com." }, 
+		{ "ips" : [ "alarmadapter-512731437.us-east-1.elb.amazonaws.com.", "52.21.175.180", "52.86.169.50" ], "domain" : "alarmus.ezvizlife.com." }, 
+		{ "ips" : [ "lbs-726140220.us-east-1.elb.amazonaws.com.", "52.44.92.194", "54.164.184.247" ], "domain" : "dev.us.ezviz7.com." }, 
+		{ "ips" : [ "138.236.128.36", "129.6.15.28", "162.210.111.4", "198.50.238.156" ], "domain" : "0.amazon.pool.ntp.org." } 
+	], 
+	"os" : "", 
+	"manufacturer" : "AmpakTec", 
+	"ip_address" : "192.168.1.214" 
+}
+

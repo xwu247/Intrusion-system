@@ -1,0 +1,40 @@
+
+RIOT Controller
+
+Current Configuration
+
+DHCP Address - 128.59.19.236
+Login - riot / irtlab7LW2#riot@
+ 
+SSH Server running on port 13031
+
+
+OVS Configured with br0
+
+
+Ubuntu
+http://blog.codybunch.com/2016/10/14/KVM-and-OVS-on-Ubuntu-1604/
+
+
+wireless access point:
+name: ASUS
+password: iotsecurity
+
+
+Controller & switch setting:
+controller(br0): 192.168.1.167
+onos server: 127.0.0.1:6633
+openflow switch ID: of:0000a0cec8c0b2fb
+Local: br0
+port 1: eno1
+port 2: enxa0cec8c0b2fb (USB cable adaptor)
+port 3: wlpls0 (not used)
+
+ONOS UI: 127.0.0.1:8181/onos/ui
+user: onos
+password: admin
+
+IoT device IPs:
+camera: 192.168.1.140
+~                                                                                                                                     
+~                                  

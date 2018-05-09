@@ -1,0 +1,530 @@
+{
+    "ietf-mud:mud": {
+        "mud-url": "", 
+        "cache-validity": 48, 
+        "is-supported": true, 
+        "systeminfo": "This is used in Dynamic Profiling", 
+        "last-update": "2018-04-09 16:24:00.535314", 
+        "from-device-policy": {
+            "access-lists": {
+                "access-list": [
+                    {
+                        "acl-name": "ACL-36750-v4fr", 
+                        "acl-type": ""
+                    }
+                ]
+            }
+        }, 
+        "to-device-policy": {
+            "access-lists": {
+                "access-list": [
+                    {
+                        "acl-name": "ACL-36750-v4to", 
+                        "acl-type": ""
+                    }
+                ]
+            }
+        }, 
+        "Manufacturer": "123"
+    }, 
+    "ietf-access-control-list:access-lists": {
+        "acl": [
+            {
+                "aces": [
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49153, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49155, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49156, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49158, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49159, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49173, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "mqtt.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49154, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "mqtt.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49173, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49157, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49160, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49161, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49162, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49174, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49172, 
+                                "sport": 80
+                            }
+                        }
+                    }
+                ], 
+                "type": "ipv4-acl-type", 
+                "name": "mud-36750-v4to"
+            }, 
+            {
+                "aces": [
+                    {
+                        "name": "lociot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ietf-mud:mud": {
+                                "local-network": [
+                                    "null"
+                                ]
+                            }, 
+                            "tcp": {
+                                "dport": 50626, 
+                                "sport": 80
+                            }, 
+                            "ipv4": {
+                                "protocol": 6
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 49153
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 49155
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 49156
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 49158
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 49159
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 49173
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "mqtt.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 49154
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "mqtt.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 49173, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "mqtt.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 49173
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 49157
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 49160
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 49161
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 49162
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 49174
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 49172
+                            }
+                        }
+                    }
+                ], 
+                "type": "ipv4-acl-type", 
+                "name": "mud-36750-v4fr"
+            }
+        ]
+    }
+}

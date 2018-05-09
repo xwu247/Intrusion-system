@@ -1,0 +1,270 @@
+{
+    "ietf-mud:mud": {
+        "mud-url": "", 
+        "cache-validity": 48, 
+        "is-supported": true, 
+        "systeminfo": "This is used in Dynamic Profiling", 
+        "last-update": "2018-04-09 16:24:00.538870", 
+        "from-device-policy": {
+            "access-lists": {
+                "access-list": [
+                    {
+                        "acl-name": "ACL-36750-v4fr", 
+                        "acl-type": ""
+                    }
+                ]
+            }
+        }, 
+        "to-device-policy": {
+            "access-lists": {
+                "access-list": [
+                    {
+                        "acl-name": "ACL-36750-v4to", 
+                        "acl-type": ""
+                    }
+                ]
+            }
+        }, 
+        "Manufacturer": "123"
+    }, 
+    "ietf-access-control-list:access-lists": {
+        "acl": [
+            {
+                "aces": [
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "a.gw.tuyaus.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50490, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "a.gw.tuyaus.com."
+                            }, 
+                            "tcp": {
+                                "dport": 15, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "mq.gw.tuyaus.com."
+                            }, 
+                            "tcp": {
+                                "dport": 8190, 
+                                "sport": 1883
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "a.gw.tuyaus.com."
+                            }, 
+                            "tcp": {
+                                "dport": 11062, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "a.gw.tuyaus.com."
+                            }, 
+                            "tcp": {
+                                "dport": 2518, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "a.gw.tuyaus.com."
+                            }, 
+                            "tcp": {
+                                "dport": 27878, 
+                                "sport": 80
+                            }
+                        }
+                    }
+                ], 
+                "type": "ipv4-acl-type", 
+                "name": "mud-36750-v4to"
+            }, 
+            {
+                "aces": [
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "a.gw.tuyaus.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 50490
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "a.gw.tuyaus.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 15
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "mq.gw.tuyaus.com."
+                            }, 
+                            "tcp": {
+                                "dport": 14145, 
+                                "sport": 1883
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "mq.gw.tuyaus.com."
+                            }, 
+                            "tcp": {
+                                "dport": 1883, 
+                                "sport": 14145
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "mq.gw.tuyaus.com."
+                            }, 
+                            "tcp": {
+                                "dport": 1883, 
+                                "sport": 8190
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "a.gw.tuyaus.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 11062
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "a.gw.tuyaus.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 2518
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "a.gw.tuyaus.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 27878
+                            }
+                        }
+                    }
+                ], 
+                "type": "ipv4-acl-type", 
+                "name": "mud-36750-v4fr"
+            }
+        ]
+    }
+}

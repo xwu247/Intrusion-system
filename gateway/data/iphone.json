@@ -1,0 +1,1012 @@
+{
+    "ietf-mud:mud": {
+        "mud-url": "", 
+        "cache-validity": 48, 
+        "is-supported": true, 
+        "systeminfo": "This is used in Dynamic Profiling", 
+        "last-update": "2018-04-09 16:24:00.529182", 
+        "from-device-policy": {
+            "access-lists": {
+                "access-list": [
+                    {
+                        "acl-name": "ACL-36750-v4fr", 
+                        "acl-type": ""
+                    }
+                ]
+            }
+        }, 
+        "to-device-policy": {
+            "access-lists": {
+                "access-list": [
+                    {
+                        "acl-name": "ACL-36750-v4to", 
+                        "acl-type": ""
+                    }
+                ]
+            }
+        }, 
+        "Manufacturer": "123"
+    }, 
+    "ietf-access-control-list:access-lists": {
+        "acl": [
+            {
+                "aces": [
+                    {
+                        "name": "lociot-todev", 
+                        "match": {
+                            "icmp": {}, 
+                            "ietf-mud:mud": {
+                                "local-network": [
+                                    "null"
+                                ]
+                            }, 
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 1
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "www.ihomeaudio.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50633, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "data.flurry.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50621, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "data.flurry.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50634, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50630, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50631, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50632, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "e.crashlytics.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50635, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "devicecloud.vocolinc.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50638, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "devicecloud.vocolinc.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50637, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "devicecloud.vocolinc.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50636, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "devicecloud.vocolinc.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50639, 
+                                "sport": 80
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "47-courier.push.apple.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50640, 
+                                "sport": 5223
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "gsp64-ssl.ls.apple.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50641, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "inbox.google.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50522, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "inbox.google.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50521, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "inbox.google.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50646, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "inbox.google.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50645, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "inbox.google.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50713, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "inbox.google.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50714, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "alogs.umeng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50712, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "googleapis.l.google.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50715, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "www.googleadservices.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50716, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-todev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "www.googleadservices.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50717, 
+                                "sport": 443
+                            }
+                        }
+                    }
+                ], 
+                "type": "ipv4-acl-type", 
+                "name": "mud-36750-v4to"
+            }, 
+            {
+                "aces": [
+                    {
+                        "name": "lociot-frdev", 
+                        "match": {
+                            "icmp": {}, 
+                            "ietf-mud:mud": {
+                                "local-network": [
+                                    "null"
+                                ]
+                            }, 
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 1
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "lociot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ietf-mud:mud": {
+                                "local-network": [
+                                    "null"
+                                ]
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 50592
+                            }, 
+                            "ipv4": {
+                                "protocol": 6
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "www.ihomeaudio.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50619, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "www.ihomeaudio.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50619
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "www.ihomeaudio.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50633
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "www.ihomeaudio.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50681
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "data.flurry.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50621, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "data.flurry.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50621
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "data.flurry.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50634
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "data.flurry.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50682
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50630
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50631
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50632
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 50604, 
+                                "sport": 443
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "api.evrythng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50604
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "e.crashlytics.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50635
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "devicecloud.vocolinc.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 50599
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "devicecloud.vocolinc.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 50602
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "devicecloud.vocolinc.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 50600
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "devicecloud.vocolinc.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 50601
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "devicecloud.vocolinc.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 50636
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "devicecloud.vocolinc.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 50637
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "devicecloud.vocolinc.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 50638
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "devicecloud.vocolinc.com."
+                            }, 
+                            "tcp": {
+                                "dport": 80, 
+                                "sport": 50639
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "47-courier.push.apple.com."
+                            }, 
+                            "tcp": {
+                                "dport": 5223, 
+                                "sport": 50640
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "gsp64-ssl.ls.apple.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50641
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "inbox.google.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50522
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "inbox.google.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50521
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "inbox.google.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50645
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "inbox.google.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50646
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "inbox.google.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50713
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "inbox.google.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50714
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "alogs.umeng.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50712
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "googleapis.l.google.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50715
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "www.googleadservices.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50716
+                            }
+                        }
+                    }, 
+                    {
+                        "name": "iot-frdev", 
+                        "match": {
+                            "actions": {
+                                "forwarding": "accept"
+                            }, 
+                            "ipv4": {
+                                "protocol": 6, 
+                                "host_name": "www.googleadservices.com."
+                            }, 
+                            "tcp": {
+                                "dport": 443, 
+                                "sport": 50717
+                            }
+                        }
+                    }
+                ], 
+                "type": "ipv4-acl-type", 
+                "name": "mud-36750-v4fr"
+            }
+        ]
+    }
+}

@@ -1,0 +1,6 @@
+root user name: admin
+password: admin
+start service: sudo service mongod start or mongod
+login: mongo -u admin -p admin123 --authenticationDatabase admin
+port: 27017
+database name: devices
